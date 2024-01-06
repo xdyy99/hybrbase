@@ -168,7 +168,7 @@ function Slider() {
     if(control.dragging && Math.abs(control.X - control.start) > 2 ) control.dragged = true
 
     if (control.dragging) {
-      control.position += control.X - control.start
+      control.position += (control.X - control.start) * 1.5
       control.start = control.X
     }
   }
